@@ -1,0 +1,28 @@
+@startuml DomainModel
+left to right direction
+hide circle
+hide methods
+
+package DomainModel {
+    class 利用者 #F5A9BC
+    class 利用者の情報
+    class 機能
+
+    mix_actor ユーザー
+
+    利用者の情報 o--> 食事
+    利用者の情報 o--> 睡眠
+    利用者の情報 o--> 排泄
+    利用者の情報 o--> 臨時薬
+    利用者の情報 o--> 入浴
+    入浴 o--> 入浴予定
+    利用者の情報 o--> バイタルサイン
+    利用者の情報 o--> アクシデント
+    ユーザー o-- 利用者の情報
+    機能 o--> 利用者の情報
+    利用者 o--> 利用者の情報
+    ユーザー -- 機能
+    ユーザー -- 利用者
+
+}
+@enduml
