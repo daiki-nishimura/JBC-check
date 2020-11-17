@@ -23,6 +23,5 @@ package DomainModel {
     利用者 o--> 利用者の情報
     ユーザー -- 機能
     ユーザー -- 利用者
-
 }
 @enduml
