@@ -1,0 +1,20 @@
+@startuml DomainModel
+left to right direction
+hide circle
+hide members
+
+mix_actor ユーザー
+
+class 利用者
+
+利用者 o--> 食事
+利用者 o--> 睡眠
+利用者 o--> 排泄
+利用者 o--> 臨時薬
+利用者 o--> 入浴
+利用者 o--> 入浴予定
+利用者 o--> バイタルサイン
+利用者 o--> アクシデント
+ユーザー o-- 利用者
+
+@enduml
